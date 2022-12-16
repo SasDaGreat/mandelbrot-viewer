@@ -77,14 +77,14 @@ C_PW 			= 1
 ESCAPE_RADIUS	= 5				# default: 10
 INITIAL_Z		= complex(0,0)
 SHOW_PROGRESS 	= True 		# ONLY ENABLE THIS DURING LARGER RENDERS! Slows down the program considerably when it's loading fast
-iters 			= 50000
+iters 			= 1001
 #VALUE_LIMIT 	= 
 
 # actual graph shit:
 WIDTH,HEIGHT= 800,600
-graph_width	= 4
+graph_width	= 4											#5.1291747735886074e-08
 graph_height= get_graph_height(graph_width)
-topleft		= (-graph_width/2, graph_height/2)
+topleft		= (-graph_width/2, graph_height/2)			#(-0.10226371046153276,0.9436655460744693)
 
 mandel_img	= Image.new("L", (WIDTH,HEIGHT))
 #draw 		= Draw(mandel_img)

@@ -79,7 +79,7 @@ SCALE_ITERS = False	# whether or not the program should increase the iterations 
 zoom = iters**0.5
 
 # actual graph shit:
-WIDTH,HEIGHT= 700,700			# default: 800 by 600
+WIDTH,HEIGHT= 200,200			# default: 800 by 600
 graph_width	= 4 				# default: 4
 graph_height= get_graph_height(graph_width)
 topleft		= (-graph_width/2, graph_height/2)

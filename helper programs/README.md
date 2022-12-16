@@ -1,0 +1,1 @@
+Helper programs to split/combine/convert RGB/HSV colour channels, or to test the colour space I was trying to use for v3

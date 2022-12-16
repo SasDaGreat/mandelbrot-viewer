@@ -113,6 +113,7 @@ def get_colour(x,y):
 	for i in range(iters):
 		try:
 			z -= (sin(z)-1)/(cos(x))
+			# z -= sin(z) * cos(z) - c * cos(z)**2 : also another good one, iirc it's tanz
 			z_mod = abs(z)
 		except:
 			return (get_hue( i ),100,100,100)

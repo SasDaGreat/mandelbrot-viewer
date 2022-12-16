@@ -134,13 +134,13 @@ def get_colour(x,y):
 
 # colour shit:
 HUE_RANGE   = 360
-COLOURS 	= 60					# doesn't limit to this many colours, however, because of fractional iteration
+COLOURS 	= 44					# doesn't limit to this many colours, however, because of fractional iteration
 MANDEL_COLOUR	= ( 0, 0, 0, 100)	# black
 SCREEN_BG_COLOUR= (100,100,100)
 current_colour 	= pygame.Color(0,0,0)
 CIRCLE_RADIUS 	= 5
 circle_rec 		= pygame.Rect(0, 0, CIRCLE_RADIUS*2, CIRCLE_RADIUS*2)
-COLOUR_SET	= True
+COLOUR_SET	= False
 RAD_TO_DEG 	= 180/pi
 
 # changeable constants:
@@ -152,7 +152,7 @@ INV_HUE_OFF	= True
 
 # iteration shit:
 SENSITIVITY = 2
-iters 		= 100
+iters 		= 300
 SCALE_ITERS = False	# whether or not the program should increase the iterations limit as the graph is zoomed in
 zoom = iters**0.5
 
@@ -160,9 +160,9 @@ zoom = iters**0.5
 MOVEMENT_SCALE 	= 0.1									# default: 0.1
 WIDTH,HEIGHT 	= 800,600								# default: 800,600
 MOVE_W,MOVE_H 	= int(WIDTH*MOVEMENT_SCALE), int(HEIGHT*MOVEMENT_SCALE)
-graph_width		= 4										# default: 4
-graph_height 	= get_graph_height(graph_width)			# default: (calculated from graph_width)
-topleft 		= (-graph_width/2, graph_height/2)		# default: (-graph_width/2, graph_height/2)
+graph_width     = 4										# default: 4
+graph_height    = get_graph_height(graph_width)			# default: (calculated from graph_width)
+topleft         = (-graph_width/2, graph_height/2)		# default: (-graph_width/2, graph_height/2)
 
 # iter font shit:
 FONT_SIZE 	= min(WIDTH//30, HEIGHT//30)
